@@ -8,16 +8,196 @@
   </head>
   <body>
     <div class="slideshow">
-      <!-- Slide 1: Introduction to APIs -->
+      <!-- Slide 1: Introduction to Deep Dive Session -->
       <div class="slide" id="slide1">
-        <!--* Add content here for slides -->
+        <h2>Deep Dive into APIs</h2>
+        <p>
+          Welcome to our detailed session on APIs! Today, we will explore the
+          intricacies of URLs, query parameters, and the JSON format.
+          Additionally, we'll learn how to effectively interpret API
+          documentation.
+        </p>
       </div>
 
-      <!-- Slide 2: Common Examples of APIs -->
+      <!-- Slide 2: Structure of URLs -->
       <div class="slide" id="slide2">
-        <!--* Add content here for next slide -->
+        <h3>Structure of URLs</h3>
+        <p>
+          URLs (Uniform Resource Locators) are the addresses used to access
+          resources on the web. A URL consists of several components:
+        </p>
+        <ul>
+          <li>
+            <strong>Scheme</strong>: The protocol used (e.g., http, https).
+          </li>
+          <li>
+            <strong>Host</strong>: The domain name or IP address of the server.
+          </li>
+          <li>
+            <strong>Path</strong>: The specific resource on the server (e.g.,
+            /users).
+          </li>
+          <li>
+            <strong>Query Parameters</strong>: Key-value pairs appended to the
+            URL to modify the request or provide additional information.
+          </li>
+        </ul>
       </div>
-      <!--* Create more slides using the class slide and id. Add 1 to each ID for each slide -->
+      <!-- Slide 3: Understanding Query Parameters -->
+      <div class="slide" id="slide3">
+        <h3>Understanding Query Parameters</h3>
+        <p>
+          Query parameters are used to refine or modify requests made to a
+          server. They follow a key-value pair structure and are appended to the
+          URL after a question mark (?). Multiple parameters are separated by an
+          ampersand (&).
+        </p>
+        <img src="assets/url.png" alt="structure of a URL" />
+      </div>
+
+      <!-- Slide 4: Detailed Structure of URL Query Parameters -->
+      <div class="slide" id="slide4">
+        <img
+          width="900px"
+          src="assets/url-info.png"
+          alt="Structure of URL Parameters"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+      <!-- Slide 5: Introduction to JSON Format -->
+      <div class="slide" id="slide5">
+        <h3>Introduction to JSON Format</h3>
+        <p>
+          JSON (JavaScript Object Notation) is a text format for storing and
+          transporting data. It is designed to be simple to read and write for
+          humans, and easy to parse and generate for machines.
+        </p>
+        <p>JSON is structured as:</p>
+        <ul>
+          <li>
+            <strong>Objects</strong>: A collection of key/value pairs enclosed
+            in curly braces { }. Keys are strings, and values can be strings,
+            numbers, arrays, or other objects.
+          </li>
+          <li>
+            <strong>Arrays</strong>: An ordered list of values enclosed in
+            square brackets [ ]. Values can include strings, numbers, objects,
+            and other arrays.
+          </li>
+        </ul>
+        <p>Here is a basic example of JSON:</p>
+        <pre>
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 25,
+    "isStudent": false,
+    "courses": ["Math", "Science", "Art"]
+}</pre
+        >
+      </div>
+      <!-- Slide 6: JSON Data Types -->
+      <div class="slide" id="slide6">
+        <h3>JSON Data Types</h3>
+        <p>JSON supports various data types which include:</p>
+        <ul>
+          <li><strong>String</strong>: Text surrounded by double quotes.</li>
+          <li><strong>Number</strong>: Integer or floating point.</li>
+          <li><strong>Object</strong>: An unordered set of key/value pairs.</li>
+          <li><strong>Array</strong>: An ordered list of values.</li>
+          <li><strong>Boolean</strong>: True or false.</li>
+          <li><strong>Null</strong>: An empty value.</li>
+        </ul>
+        <p>
+          Understanding these data types is essential for structuring JSON
+          correctly.
+        </p>
+      </div>
+      <!-- Slide 7: JSON in Postman -->
+      <div class="slide" id="slide7">
+        <h3>Using JSON in Postman</h3>
+        <p>
+          Postman allows you to easily work with JSON, whether you're sending
+          data (in a POST request, for example) or receiving it as part of a
+          response. Here's how you can set up a POST request with a JSON body in
+          Postman:
+        </p>
+        <ol>
+          <li>Select the 'POST' method from the dropdown.</li>
+          <li>
+            Enter the URL for the API endpoint you wish to communicate with.
+          </li>
+          <li>
+            In the 'Body' tab, select 'raw' and then 'JSON' from the dropdown
+            menu.
+          </li>
+          <li>Type your JSON data into the text editor.</li>
+          <li>Send your request and observe the response.</li>
+        </ol>
+        <p>
+          Here's an example of JSON data you might send in the body of a POST
+          request:
+        </p>
+        <pre>
+{
+    "email": "john.doe@example.com",
+    "password": "12345"
+}</pre
+        >
+      </div>
+      <!-- Slide 8: Interpreting JSON Responses in Postman -->
+      <div class="slide" id="slide8">
+        <h3>Interpreting JSON Responses in Postman</h3>
+        <p>
+          When you receive a response in Postman, it often contains JSON data.
+          It's important to understand how to interpret this. Postman provides a
+          pretty-print version by default, making it easier to read.
+        </p>
+        <p>Here's an example of a JSON response:</p>
+        <pre>
+{
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "roles": ["user", "admin"]
+}</pre
+        >
+        <p>
+          You can navigate through the JSON structure in Postman to find
+          specific pieces of data, or use Postman's built-in tools to test and
+          validate the response.
+        </p>
+      </div>
+      <!-- Slide 9: Conclusion - Bringing it All Together -->
+      <div class="slide" id="slide9">
+        <h2>Conclusion - Understanding JSON and Postman</h2>
+        <p>
+          Today, we've taken a deep dive into the world of JSON and explored how
+          to effectively use Postman to send and interpret API requests and
+          responses.
+        </p>
+        <h3>Key Takeaways:</h3>
+        <ul>
+          <li>
+            The structure and importance of JSON in web development and APIs.
+          </li>
+          <li>
+            How JSON data types structure the information you send and receive.
+          </li>
+          <li>
+            Practical skills for sending JSON in requests and analyzing JSON
+            responses using Postman.
+          </li>
+        </ul>
+        <p>
+          With these tools and knowledge, you're well on your way to becoming
+          proficient in API interaction and testing. Keep practicing, explore
+          more complex data structures, and don't hesitate to experiment with
+          different APIs.
+        </p>
+        <p><strong>Happy coding and testing!</strong></p>
+      </div>
+
       <button id="prevBtn">Previous</button>
       <button id="nextBtn">Next</button>
     </div>

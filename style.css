@@ -52,6 +52,18 @@ pre {
 #slide3 {
   /* Add slide specific styles */
 }
+#slide5 {
+  font-size: 30px;
+}
+#slide7 {
+  font-size: 30px;
+}
+#slide8 {
+  font-size: 35px;
+}
+#slide9 {
+  font-size: 30px;
+}
 button {
   padding: 10px;
   margin: 10px;
